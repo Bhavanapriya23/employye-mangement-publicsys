@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/employees";
+const API_URL = "/api/employees";
 
 const form = document.getElementById("employeeForm");
 const tableBody = document.querySelector("#employeeTable tbody");
@@ -106,3 +106,4 @@ async function removeEmployee(id) {
     }
   }
 }
+
