@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // serves frontend file
 // MongoDB Connection (secured via .env)
 const MONGO_URI = process.env.MONGO_URI;
 if (!MONGO_URI) {
-  console.error('❌ MONGO_URI not found in .env file');
+  console.error(' MONGO_URI not found in .env file');
   process.exit(1);
 }
 
@@ -25,7 +25,7 @@ const connectDB = async () => {
   try {
     console.log('Connecting to MongoDB...');
     await mongoose.connect(MONGO_URI);
-    console.log('✅ MongoDB Connected Successfully!');
+    console.log(' MongoDB Connected Successfully!');
   } catch (err) {
     console.error('MongoDB Connection Error:', err.message);
     process.exit(1);
@@ -46,6 +46,7 @@ app.get('/', (req, res) => {
 (async function startServer() {
   await connectDB();
   app.listen(PORT, '0.0.0.0', () =>
-    console.log(`🚀 Server running securely on port ${PORT}`)
+    console.log(` Server running securely on port ${PORT}`)
   );
 })();
+
