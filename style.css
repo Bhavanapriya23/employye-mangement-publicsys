@@ -1,4 +1,4 @@
-/* 🌸 Global Styles */
+/*  Global Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #132440, #16476A);
@@ -7,7 +7,7 @@ body {
   color: #132440;
 }
 
-/* 🪩 Main Container */
+/*  Main Container */
 .container {
   max-width: 950px;
   margin: 50px auto;
@@ -23,7 +23,7 @@ body {
   box-shadow: 0 8px 25px rgba(19, 36, 64, 0.3);
 }
 
-/* 🌟 Heading */
+/* Heading */
 h1 {
   text-align: center;
   color: #BF092F;
@@ -32,7 +32,7 @@ h1 {
   text-shadow: 0 2px 6px rgba(191, 9, 47, 0.25);
 }
 
-/* 🧾 Form Layout */
+/* Form Layout */
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -64,7 +64,7 @@ form select:focus {
   outline: none;
 }
 
-/* 🎯 Button Styling */
+/* Button Styling */
 form button {
   grid-column: span 2;
   padding: 12px;
@@ -84,7 +84,7 @@ form button:hover {
   transform: scale(1.02);
 }
 
-/* 📊 Table Styling */
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -114,7 +114,7 @@ tr:hover {
   background-color: #f1f4f8;
 }
 
-/* 🧠 Action Buttons */
+/* Action Buttons */
 .edit-btn,
 .delete-btn {
   border: none;
@@ -144,7 +144,7 @@ tr:hover {
   transform: scale(1.05);
 }
 
-/* 📱 Responsive Design */
+/*  Responsive Design */
 @media (max-width: 700px) {
   form {
     grid-template-columns: 1fr;
@@ -158,3 +158,4 @@ tr:hover {
     padding: 20px;
   }
 }
+
