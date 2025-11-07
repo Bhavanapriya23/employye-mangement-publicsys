@@ -1,4 +1,4 @@
-// 🌐 Base API URL
+//  Base API URL
 // When deployed, replace with your Render backend URL.
 // Example: const API_URL = "https://your-backend-service.onrender.com/api/employees";
 const API_URL = "/api/employees"; // Relative path for public safety
@@ -67,3 +67,4 @@ export async function deleteEmployee(id) {
     return { error: "Failed to delete employee" };
   }
 }
+
